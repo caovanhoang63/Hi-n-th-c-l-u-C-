@@ -6,15 +6,15 @@ int main()
 	int n;
 	cout << "Nhap n: ";
 	cin >> n;
-	float s = 0;
-	int t = 1;
-	int i = 1;
+	float at = 2;
+	int i = 2;
+	float ahh;
 	while (i<=n)
 	{
-		t *= i;
-		s = pow(t + s, (float)1 / (i + 1));
+		ahh = 5 * at + sqrt(24 * at * at - 8);
+		at = ahh;
 		i++;
 	}
-	cout << "S(" << n << ") =" << s;
+	cout << "a(" << n << ") = " << ahh;
 	return 0;
 }

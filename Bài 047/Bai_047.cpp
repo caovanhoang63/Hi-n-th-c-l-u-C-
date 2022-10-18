@@ -7,14 +7,12 @@ int main()
 	cout << "Nhap n: ";
 	cin >> n;
 	float s = 0;
-	int t = 1;
 	int i = 1;
-	while (i<=n)
+	while (i <= n)
 	{
-		t *= i;
-		s = pow(t + s, (float)1 / (i + 1));
+		s += sqrt(1 +(float)1/(i*i)+(float)1/(1+i)*(1+i));
 		i++;
 	}
-	cout << "S(" << n << ") =" << s;
+	cout << "S(" << n << ") = " << s;
 	return 0;
 }

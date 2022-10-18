@@ -1,20 +1,20 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 int main()
 {
+	float x;
+	cout << "Nhap x: ";
+	cin >> x;
 	int n;
 	cout << "Nhap n: ";
 	cin >> n;
-	float s = 0;
 	int t = 1;
 	int i = 1;
-	while (i<=n)
+	while (i <= n)
 	{
-		t *= i;
-		s = pow(t + s, (float)1 / (i + 1));
+		t *= x;
 		i++;
 	}
-	cout << "S(" << n << ") =" << s;
+	cout << "T(" << n << ") = " << t;
 	return 0;
 }
